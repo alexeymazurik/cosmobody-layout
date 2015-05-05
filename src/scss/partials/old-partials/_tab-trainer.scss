@@ -1,0 +1,45 @@
+.trainer-content {
+  .tab-trainer {
+    .main-info {
+      .item-image {
+        
+        height: 280px;
+
+        .back {
+          position: absolute;
+          display: block;
+        }
+
+        .front {
+          position: absolute;
+          display: block;
+          width: 100%;
+          top: -20px;
+          left: 0;
+        }
+      }
+
+      .item-body {
+        .main-text {
+          font-size: 1em;
+          line-height: 23px;
+          font-weight: 500;
+        }
+
+        .landing-button {
+          margin: 15px auto 10px;
+          width: 95%;
+          display: block;
+        }
+      }
+    }
+
+    h2 {
+      text-align: center;
+      margin: 10px 0;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 1.2em;
+    }
+  }
+}

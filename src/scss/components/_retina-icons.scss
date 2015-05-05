@@ -1,0 +1,103 @@
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+  .icon-block {
+  margin: 0 auto;
+  padding: 0;
+  display: block;
+
+  &.icon-inline {
+    display: inline-block !important;
+  }
+
+  &.icon-right {
+    margin: 0;
+    margin-left: calc(100% - 23px);
+  }
+
+  &.icon-left {
+    margin: 0;
+  }
+
+  &.icon-search {
+    width: 22px;
+    height: 21px;
+    
+    background: url('../img/icons@2x/icon-search.png') 50% center center;
+  }
+
+  &.icon-menu {
+    width: 21px;
+    height: 34px;
+    
+    background: url('../img/icons@2x/icon-menu.png') 50% center center;
+  }
+
+  &.icon-dash {
+    width: 26px;
+    height: 26px;
+    
+    background-image: url('../img/icons@2x/icon-home.png');
+    background-size: contain;
+  }
+
+  &.icon-workouts {
+    width: 34px;
+    height: 26px;
+
+    background-image: url('../img/icons@2x/icon-barbell.png');
+    background-size: contain;
+  }
+
+  &.icon-programs {
+    width: 23px;
+    height: 26px;
+    background-image: url('../img/icons@2x/icon-stopwatch.png');
+    background-size: contain;
+  }
+
+  &.icon-trainers {
+    width: 26px;
+    height: 26px;
+
+    background-image: url('../img/icons@2x/icon-trainers.png');
+    background-size: contain;
+  }
+
+  &.icon-history {
+    width: 26px;
+    height: 26px;
+
+    background-image: url('../img/icons@2x/icon-clock.png');
+    background-size: contain;
+  }
+}
+
+.active {
+  .icon-dash {
+    background-image: url('../img/icons@2x/active/icon-home.png');
+  }
+
+  .icon-workouts {
+    background-image: url('../img/icons@2x/active/icon-barbell.png');
+  }
+
+  .icon-programs {
+    background-image: url('../img/icons@2x/active/icon-stopwatch.png');
+  }
+
+  .icon-trainers {
+    background-image: url('../img/icons@2x/active/icon-trainers.png');
+  }
+
+  .icon-history {
+    background-image: url('../img/icons@2x/active/icon-clock.png');
+  }
+}
+
+}

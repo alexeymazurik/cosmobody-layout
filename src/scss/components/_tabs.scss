@@ -1,0 +1,48 @@
+.tabs {
+  margin: 0;
+  padding: 0;
+
+  background: red;
+  
+  .tab {
+    width: 20%;
+
+    padding: 5px;
+
+    background: #000000;
+
+    box-sizing: border-box;
+
+    text-align: center;
+
+    color: #929292;
+
+    line-height: 26px;
+    vertical-align: middle;
+
+    cursor: pointer;
+
+    &.active {
+      background: #494949;
+      color: white;
+    }
+
+    &:hover {
+      background: darken(#494949, 10);
+    }
+
+    span {
+      display: block;
+      
+      line-height: 15px;
+
+      margin: 0;
+      padding: 0;
+
+      font-size: 0.6em;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+  }
+}

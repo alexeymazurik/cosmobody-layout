@@ -1,0 +1,132 @@
+.programs-content {
+
+  .tab-programs {
+    .list {
+      .card-view {
+        display: block;
+        margin-bottom: 6px;
+        cursor: pointer;
+
+        .item-image {
+          height: 250px;
+        }      
+
+        .curtain {
+          position: absolute;
+          display: block;
+          
+          z-index: 100;
+          
+          width: 100%;
+          height: 100%;
+          
+          top: 0;
+          left: 0;
+          
+          background: linear-gradient(to bottom, 
+            rgba(30,87,153,0) 0%,
+            rgba(13,37,66,0) 57%,
+            rgba(0,0,0,0.5) 100%);
+        }
+
+        .main-title {
+          position: absolute;
+          display: table;
+
+          z-index: 1000;
+
+          padding: 5px 10px 20px;
+          
+          top: calc(100% - 90px);
+          left: 0;
+          
+          width: 60%;
+          height: 90px;
+          
+          word-break: break-word;
+          line-height: 30px;
+          
+          font-size: 2em;
+          font-weight: 400;
+
+          color: white;
+          background: transparent;
+
+          span {
+            display: table-cell;
+            vertical-align: bottom;
+          }
+        }
+
+        .remained-days {
+          margin: 0;
+          padding: 0;
+          position: absolute;
+          background: transparent;
+          top: 0;
+          left: 0;
+
+          .title {
+            position: absolute;
+
+            top: 12px;
+            left: 8px;
+
+            color: #ffffff;
+
+            text-align: center;
+
+            
+            span {
+              display: block;
+
+
+              &.number {
+                font-size: 1.9em;
+              }
+
+              &.days {
+                text-transform: uppercase;
+
+                vertical-align: middle;
+
+                line-height: 20px;
+
+                font-size: 0.8em;
+                font-weight: 600;
+              }
+            }
+          }
+        }
+
+        .triangle {
+          position: relative;
+
+          width: 150px;
+          height: 150px;
+
+          background: transparent;
+          overflow: hidden;
+
+          &:after {
+           content: "";
+           position: absolute;
+           
+           width: 200px;
+           height: 200px;
+
+           top: -125px;
+           left: -115px;
+           
+           background: #009AFA;
+           transform: rotate(315deg); /* Не забываем про префиксы */
+           
+           box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.5);
+         }
+       }
+
+     }
+
+   }
+ }
+}

@@ -1,0 +1,99 @@
+$border-radius: 5px;
+
+.connect-content {
+  background: #E7E7E7;
+
+  &.white {
+    background: #ffffff;
+  }
+
+  .settings-connect {
+    margin-top: 44px;
+    .card {
+      margin: 0;
+      padding: 0;
+      background: transparent;
+      box-shadow: none;
+      
+      .item {
+        border: 0;
+
+        &.status {
+          text-align: center;
+          font-size: 1.4em;
+          font-weight: 600;
+
+          &.ok {
+            color: #009B00;
+          }
+        }
+
+        &.item-image {
+          display: block;
+
+          margin: 0 auto;
+
+          width: 75%;
+
+          background: transparent;
+          box-shadow: none;
+          border-radius: 0;
+          border: 0;
+        }
+
+        &.item-footer {
+          font-size: 1.3em;
+          font-weight: 400;
+        }
+      }
+
+      
+
+      &.white {
+        background: #ffffff;
+      }
+    }
+
+    .description {
+      margin: 5px;
+
+      font-weight: 400;
+      font-size: 1.2em;
+
+      line-height: 25px;
+
+      text-align: center;
+    }
+
+    .connect-form {
+      margin: 0 15px;
+    }
+
+    .connect-jawbone-form {
+      background: #DFDFDF;
+      padding: 10px;
+
+      .list {
+
+        .item {
+          padding: 15px;
+
+          font-size: 1.3em;
+          font-weight: 400;
+          
+          &:first-child {
+            border-top-left-radius: $border-radius;
+            border-top-right-radius: $border-radius;
+
+            border-bottom-width: 2px;
+          }
+
+          &:last-child {
+            border-bottom-left-radius: $border-radius;
+            border-bottom-right-radius: $border-radius;
+          }
+        }
+      }
+    }
+  }
+}

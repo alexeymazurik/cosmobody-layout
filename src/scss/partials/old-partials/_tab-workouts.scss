@@ -1,0 +1,59 @@
+.workouts-content {
+
+  .tab-workouts {
+
+    .list {
+
+      background: #FDFDFC;
+
+      .card-view {
+        margin-bottom: 6px;
+
+
+        .item-image {
+          background: #D4D4D4;
+          height: 250px;
+
+        }
+
+        .curtain {
+          position: absolute;
+          display: inline-block;
+
+          top: 0;
+          left: 0;
+          
+          width: 100%;
+          height: 100%;
+
+          z-index: 50;
+
+          background: rgba(#000000, 0.25);
+        }
+
+        .title {
+
+          position: absolute;
+          z-index: 55;
+          display: inline-block;
+          top: calc(50% - 25px);
+          left: calc(50% - 90px);
+          line-height: 15px;
+          letter-spacing: 3px;
+          width: 180px;
+          height: 50px;
+          border: 0;
+          background: transparent;
+          border: 1px solid #ffffff;
+          text-transform: uppercase;
+          color: #ffffff;
+          font-weight: 600;
+          vertical-align: middle;
+          text-align: center;
+          font-size: 1.4em;
+          
+        }
+      }  
+    }
+  }
+}

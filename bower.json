@@ -1,0 +1,7 @@
+{
+  "name": "cosmobody",
+  "private": "true",
+  "devDependencies": {
+    "ratchet": "~2.0.2"
+  }
+}

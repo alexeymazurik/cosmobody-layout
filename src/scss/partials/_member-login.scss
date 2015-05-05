@@ -1,0 +1,52 @@
+.login {
+	display: flex;
+
+	flex-direction: column;
+	justify-content: space-between;
+
+	width: 100%;
+	height: 100%;
+
+	margin: 0;
+	padding: 0;
+
+	background: #E7E7E7;
+
+	.top, .center, .bottom {
+		margin: 20px;
+	}
+
+	a {
+		text-decoration: none;
+		color: #000000;
+		font-weight: 500;
+		font-size: 1.1em;
+
+		&.left {
+			text-align: left;
+		}
+
+		&.center {
+			text-align: center;
+		}
+	}
+
+	.center {
+		align-self: center;
+		width: 95%;
+
+		button {
+			margin-top: 10px;
+		}
+	}
+
+	.bottom {
+		text-align: center;
+	}
+
+	.logo {
+		height: 100px;
+		background: url('../img/logo_color.png') center no-repeat;
+		background-size: contain;
+	}
+}

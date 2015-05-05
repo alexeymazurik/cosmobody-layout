@@ -1,0 +1,71 @@
+.tab-workouts {
+  .table-view {
+    .table-view-cell {
+      position: relative;
+
+      .curtain {
+        position: absolute;
+        display: inline-block;
+
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+
+        z-index: 50;
+        background: rgba(#000000, 0.25);
+      }
+
+      .rect {
+        position: absolute;
+
+        
+        display: table;
+        
+        margin: 0;
+        padding: 5px;
+
+        top: calc(50% - 30px);
+        left: calc(50% - 75px);
+
+        z-index: 52;
+        
+        width: 150px;
+        height: 60px;
+
+        border: 1px solid #ffffff;
+
+        .text {
+        width: 100%;
+        height: 100%;
+
+        margin: 0;
+        padding: 0;
+
+        display: table-cell;
+
+        line-height: 25px;
+        vertical-align: middle;
+
+        letter-spacing: 3px;
+
+        border: 0;
+
+        background: transparent;
+        color: #ffffff;
+
+        text-transform: uppercase;
+        font-weight: 600;
+        text-align: center;
+        font-size: 1.2em;
+
+        white-space: normal;
+
+      }
+      }
+
+      
+    }
+  }
+}

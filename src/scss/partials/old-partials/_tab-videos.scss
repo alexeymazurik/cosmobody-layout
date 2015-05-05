@@ -1,0 +1,33 @@
+.video-content {
+  margin: 44px 0 0 0;
+  padding: 0;
+  background: #D4D4D4;
+
+  .tab-videos {
+    .list {
+      margin: 0;
+      padding: 0;
+
+      background: #D4D4D4;
+
+      .card-view {
+        margin-bottom: 10px;
+
+        .item-image {
+          background: #D4D4D4;
+          height: 280px;
+        }
+
+        .item-footer {
+
+          padding: 10px 10px 15px;
+
+          font-weight: 400;
+          color: #000000;
+
+          border: 0;
+        }
+      }  
+    }
+  }
+}

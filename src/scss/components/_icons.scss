@@ -1,0 +1,89 @@
+.icon-block {
+  margin: 0 auto;
+  padding: 0;
+  display: block;
+
+  &.icon-inline {
+    display: inline-block !important;
+  }
+
+  &.icon-right {
+    margin: 0;
+    margin-left: calc(100% - 23px);
+  }
+
+  &.icon-left {
+    margin: 0;
+  }
+
+  &.icon-search {
+    width: 22px;
+    height: 21px;
+    
+    background: url('../img/icons/icon-menu.png') no-repeat center center;
+  }
+
+  &.icon-menu {
+    width: 21px;
+    height: 34px;
+    
+    background: url('../img/icons/icon-menu.png') no-repeat center center;
+  }
+
+  &.icon-dash {
+    width: 26px;
+    height: 26px;
+    
+    background: url('../img/icons/icon-home.png') no-repeat center center;
+  }
+
+  &.icon-workouts {
+    width: 34px;
+    height: 26px;
+
+    background: url('../img/icons/icon-barbell.png') no-repeat center center;
+  }
+
+  &.icon-programs {
+    width: 23px;
+    height: 26px;
+
+    background: url('../img/icons/icon-stopwatch.png') no-repeat center center;
+  }
+
+  &.icon-trainers {
+    width: 26px;
+    height: 26px;
+
+    background: url('../img/icons/icon-trainers.png') no-repeat center center;
+  }
+
+  &.icon-history {
+    width: 26px;
+    height: 26px;
+
+    background: url('../img/icons/icon-clock.png') no-repeat center center;
+  }
+}
+
+.active {
+  .icon-dash {
+    background: url('../img/icons/active/icon-home.png') no-repeat center center;
+  }
+
+  .icon-workouts {
+    background: url('../img/icons/active/icon-barbell.png') no-repeat center center;
+  }
+
+  .icon-programs {
+    background: url('../img/icons/active/icon-stopwatch.png') no-repeat center center;
+  }
+
+  .icon-trainers {
+    background: url('../img/icons/active/icon-trainers.png') no-repeat center center;
+  }
+
+  .icon-history {
+    background: url('../img/icons/active/icon-clock.png') no-repeat center center;
+  }
+}
