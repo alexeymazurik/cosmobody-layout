@@ -1,0 +1,87 @@
+.feedback {
+  display: block;
+
+  height: 100%;
+  width: 100%;
+
+  letter-spacing: 0;
+
+  .icon {
+    font-size: 1em;
+    line-height: 22px;
+    vertical-align: middle;
+    color: #0061FF;
+    letter-spacing: 0;
+
+    &.bold {
+      font-weight: 800;
+
+    }
+  }
+  .bar-nav {
+    text-transform: none;
+    letter-spacing: 0;
+    background: #F7F7F7;
+  }
+
+  .feedback-content {
+    height: 95%;
+    .table-view {
+      display: block;
+      height: 100%;
+
+      margin: 0 !important;
+      border: 0;
+      padding: 0;
+
+      .table-view-cell {
+        display: block;
+        height: auto;
+
+        &.message {
+          height: calc(100% - 85px);
+          padding: 0;
+          margin: 0;
+          display: block;
+
+          @media screen and (max-height: 400px) {
+            height: 200px;
+            padding-bottom: 20px;
+            background: yellow;
+          }
+
+          textarea {
+            display: block;
+            width: 100%;
+            height: 100%;
+            padding: 15px;
+            text-align: left;
+            border: 0;
+          }
+        }
+
+        span {
+          display: inline;
+          font-weight: 300;
+          margin: 0;
+          padding: 0;
+        }
+
+        .sub {
+          color: #C6C6C6;
+        }
+
+        .mail {
+          color: #0061FF;
+        }
+
+        .subject {
+          color: #000000;
+        }
+
+      }
+    }
+  }
+
+
+}

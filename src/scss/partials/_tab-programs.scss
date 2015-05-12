@@ -1,11 +1,13 @@
 .tab-programs {
   .table-view {
     .table-view-cell {
+      position: relative;
       display: block;
       cursor: pointer;
 
       border-bottom-color: #fff;
       border-bottom-width: 7px;
+      
 
       .item-image {
         height: 250px;

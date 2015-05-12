@@ -4,6 +4,16 @@
     margin: 0 !important;
     border: 0;
 
+    &.higher {
+      .time-duration {
+        top: calc(100% - 90px) !important;
+      }
+
+      .media-body {
+        height: 70px !important;
+      }
+    }
+
     .table-view-cell {
       position: relative;
 
@@ -49,7 +59,7 @@
         .main-title {
           display: block;
           width: 100%;
-          font-size: 1.3em;
+          font-size: 1.2em;
         }
         .sub-title {
           font-size: 0.9em;
@@ -58,7 +68,7 @@
 
         .up-title {
           font-weight: 600;
-          font-size: 1em;
+          font-size: 0.9em;
           text-transform: uppercase;
           display: block;
           margin-bottom: 5px;

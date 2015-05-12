@@ -2,98 +2,63 @@ $border-radius: 5px;
 
 .connect-content {
   background: #E7E7E7;
-
-  &.white {
-    background: #ffffff;
+  &.jawbone {
+    background: white;
   }
 
-  .settings-connect {
-    margin-top: 44px;
-    .card {
-      margin: 0;
-      padding: 0;
-      background: transparent;
-      box-shadow: none;
-      
-      .item {
-        border: 0;
+  padding: 10px;
 
-        &.status {
-          text-align: center;
-          font-size: 1.4em;
-          font-weight: 600;
+  .connect-logo {
+    display: block;
 
-          &.ok {
-            color: #009B00;
-          }
-        }
+    margin: 0 auto;
 
-        &.item-image {
-          display: block;
+    width: 80%;
+    height: 150px;
+    
+    background: url('../img/connect-account.png') no-repeat center center;
+    background-size: contain;
+  }
 
-          margin: 0 auto;
+  .connect-jawbone {
+    display: block;
 
-          width: 75%;
+    margin: 0 auto;
 
-          background: transparent;
-          box-shadow: none;
-          border-radius: 0;
-          border: 0;
-        }
+    width: 80%;
+    height: 150px;
+    
+    background: url('../img/connect-jawbone.png') no-repeat center center;
+    background-size: contain;
+  }
 
-        &.item-footer {
-          font-size: 1.3em;
-          font-weight: 400;
-        }
-      }
+  .description {
+    text-align: center;
+    color: #000000;
+  }
 
-      
+  .status {
+    font-size: 1.1em;
+    text-align: center;
+    font-weight: 500;
 
-      &.white {
-        background: #ffffff;
+    &.ok {
+      color: #03AF01;
+      text-transform: capitalize;
+    }
+  }
+
+  .connect-form {
+    margin-bottom: 10px;
+    
+    .round-input {
+      &:first-child {
+        margin-top: 15px;
       }
     }
 
-    .description {
-      margin: 5px;
-
-      font-weight: 400;
-      font-size: 1.2em;
-
-      line-height: 25px;
-
-      text-align: center;
-    }
-
-    .connect-form {
-      margin: 0 15px;
-    }
-
-    .connect-jawbone-form {
-      background: #DFDFDF;
-      padding: 10px;
-
-      .list {
-
-        .item {
-          padding: 15px;
-
-          font-size: 1.3em;
-          font-weight: 400;
-          
-          &:first-child {
-            border-top-left-radius: $border-radius;
-            border-top-right-radius: $border-radius;
-
-            border-bottom-width: 2px;
-          }
-
-          &:last-child {
-            border-bottom-left-radius: $border-radius;
-            border-bottom-right-radius: $border-radius;
-          }
-        }
-      }
+    .landing-button {
+      margin-top: 20px;
     }
   }
 }

@@ -1,99 +1,135 @@
 .tab-trainers {
-    .table-view {
-      .table-view-cell {
+  .table-view {
+    .table-view-cell {
+      display: block;
+      position: relative;
+
+      cursor: pointer;
+      
+      border-bottom-color: #fff;
+      border-bottom-width: 6px; 
+
+      margin-bottom: 0;
+      
+      .item-image {
+        height: 250px;
+      }      
+
+      .curtain {
+        position: absolute;
         display: block;
-        margin-bottom: 0;
-        cursor: pointer;
-        border-bottom-color: #fff;
-        border-bottom-width: 6px; 
 
-        .item-image {
-          height: 250px;
-        }      
+        z-index: 100;
 
-        .curtain {
-          position: absolute;
-          display: block;
-          
-          z-index: 100;
-          
-          width: 100%;
-          height: 100%;
-          
-          top: 0;
-          left: 0;
-          
-          background: linear-gradient(to bottom, 
-            rgba(30,87,153,0) 0%,
-            rgba(13,37,66,0) 57%,
-            rgba(0,0,0,0.5) 100%);
-        }
+        width: 100%;
+        height: 100%;
 
-        .item-image {
-          .back {
-            position: absolute;
-            display: block;
-          }
+        top: 0;
+        left: 0;
 
-          .front {
-            position: absolute;
-            display: block;
-            width: 100%;
-            top: -40px;
-            left: 0;
-          }
-        }
-
-        .media-object {
-          width: 100%;
-          height: auto;
-        }       
-
-        .main-title {
-          position: absolute;
-          display: block;
-
-          z-index: 1000;
-
-          padding: 5px 10px;
-          
-          top: calc(100% - 80px);
-          left: 0;
-          
-          width: 100%;
-          height: 65px;
-          
-          word-break: break-word;
-          
-          font-weight: 400;
-
-          color: white;
-          background: transparent;
-
-          overflow: hidden;
-
-          span {
-            display: block;
-            vertical-align: bottom;
-
-            &.main {
-              font-size: 1.5em;
-              font-weight: 500;
-
-              line-height: 40px;
-            }
-
-            &.sub {
-              font-size: 1.2em;
-
-              line-height: 20px;
-            }
-          }
-        }
-
-        
-
+        background: linear-gradient(to bottom, 
+          rgba(30,87,153,0) 0%,
+          rgba(13,37,66,0) 57%,
+          rgba(0,0,0,0.5) 100%);
       }
 
+      .item-image {
+        .back {
+          position: absolute;
+          display: block;
+        }
+
+        .front {
+          position: absolute;
+          display: block;
+          width: 100%;
+          top: -40px;
+          left: 0;
+        }
+      }
+
+      .media-object {
+        width: 100%;
+        height: auto;
+      }       
+
+      .main-title {
+        position: absolute;
+        display: block;
+
+        z-index: 1000;
+
+        padding: 5px 10px;
+
+        top: calc(100% - 80px);
+        left: 0;
+
+        width: 100%;
+        height: 65px;
+
+        word-break: break-word;
+
+        font-weight: 400;
+
+        color: white;
+        background: transparent;
+
+        overflow: hidden;
+
+        span {
+          display: block;
+          vertical-align: bottom;
+
+          &.main {
+            font-size: 1.5em;
+            font-weight: 500;
+
+            line-height: 40px;
+          }
+
+          &.sub {
+            font-size: 1.2em;
+
+            line-height: 20px;
+          }
+        }
+      }
     }
   }
+}
+
+.trainer-content {
+  .trainer-info {
+    
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    .info {
+      display: block;
+      padding: 10px;
+      line-height: 25px;
+    }
+
+    .pink-button {
+      width: 95%;
+    }
+  }
+
+  .videos {
+    background: #D4D4D4;
+
+    padding-top: 15px;
+    margin-top: 20px;
+
+    h2 {
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 1.1em;
+      letter-spacing: 2px;
+      margin: 0 0 15px;
+      font-weight: 500;
+    }
+  }
+}

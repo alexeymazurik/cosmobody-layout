@@ -1399,7 +1399,9 @@ td, th {
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   * {
-    background-size: 50%; } }
+    background-size: 50%; }
+  .bar-nav {
+    letter-spacing: 2px; } }
 
 html {
   width: 100%;
@@ -1435,8 +1437,8 @@ a.landing-button, button.landing-button {
       color: #000000;
       background: #ffffff; }
   a.landing-button.pink-button, button.landing-button.pink-button {
-    display: inline-block;
-    width: 100%;
+    display: block;
+    width: 98%;
     height: 40px;
     margin: 0 auto;
     padding: 0;
@@ -1456,13 +1458,13 @@ a.landing-button, button.landing-button {
 
 .round-input {
   width: 100%;
-  height: 45px !important;
+  height: 40px !important;
   box-sizing: border-box;
   border: 0 !important;
-  border-radius: 10px !important;
+  border-radius: 5px !important;
   padding: 5px 10px 5px !important;
-  margin: 10px 0 !important;
-  font-size: 1.1em !important;
+  margin: 5px 0 !important;
+  font-size: 0.9em !important;
   font-weight: 400; }
 
 .tabs {
@@ -1472,7 +1474,7 @@ a.landing-button, button.landing-button {
   .tabs .tab {
     width: 20%;
     padding: 5px;
-    background: #000000;
+    background: #ff0000;
     box-sizing: border-box;
     text-align: center;
     color: #929292;
@@ -1481,7 +1483,7 @@ a.landing-button, button.landing-button {
     cursor: pointer; }
     .tabs .tab.active {
       background: #494949;
-      color: white; }
+      color: #ffffff; }
     .tabs .tab:hover {
       background: #2f2f2f; }
     .tabs .tab span {
@@ -1545,6 +1547,17 @@ a.landing-button, button.landing-button {
 .active .icon-history {
   background: url('../img/icons/active/icon-clock.png') no-repeat center center; }
 
+.link-invisible {
+  position: absolute !important;
+  display: block  !important;
+  margin: 0  !important;
+  padding: 0  !important;
+  top: 0  !important;
+  left: 0  !important;
+  background: transparent  !important;
+  width: 100% !important;
+  height: 100% !important; }
+
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .icon-block {
     margin: 0 auto;
@@ -1604,6 +1617,10 @@ a.landing-button, button.landing-button {
 .tab-videos .table-view {
   margin: 0 !important;
   border: 0; }
+  .tab-videos .table-view.higher .time-duration {
+    top: calc(100% - 90px) !important; }
+  .tab-videos .table-view.higher .media-body {
+    height: 70px !important; }
   .tab-videos .table-view .table-view-cell {
     position: relative;
     margin: 0;
@@ -1635,13 +1652,13 @@ a.landing-button, button.landing-button {
       .tab-videos .table-view .table-view-cell .media-body .main-title {
         display: block;
         width: 100%;
-        font-size: 1.3em; }
+        font-size: 1.2em; }
       .tab-videos .table-view .table-view-cell .media-body .sub-title {
         font-size: 0.9em;
         font-weight: 500; }
       .tab-videos .table-view .table-view-cell .media-body .up-title {
         font-weight: 600;
-        font-size: 1em;
+        font-size: 0.9em;
         text-transform: uppercase;
         display: block;
         margin-bottom: 5px; }
@@ -1660,6 +1677,9 @@ a.landing-button, button.landing-button {
     .bar-tab .tab-item.active {
       background: #464646;
       color: #ffffff; }
+    .bar-tab .tab-item:active {
+      background: #2d2d2d;
+      color: #cccccc; }
   .bar-tab .tab-label {
     font-size: 0.4em !important;
     line-height: 15px !important;
@@ -1670,7 +1690,12 @@ a.landing-button, button.landing-button {
     text-transform: uppercase; }
 
 .tab-workouts .table-view .table-view-cell {
-  position: relative; }
+  position: relative;
+  border-width: 8px;
+  border-color: #ffffff; }
+  .tab-workouts .table-view .table-view-cell img {
+    width: 100%;
+    height: auto; }
   .tab-workouts .table-view .table-view-cell .curtain {
     position: absolute;
     display: inline-block;
@@ -1710,6 +1735,7 @@ a.landing-button, button.landing-button {
       white-space: normal; }
 
 .tab-programs .table-view .table-view-cell {
+  position: relative;
   display: block;
   cursor: pointer;
   border-bottom-color: #fff;
@@ -1784,10 +1810,11 @@ a.landing-button, button.landing-button {
 
 .tab-trainers .table-view .table-view-cell {
   display: block;
-  margin-bottom: 0;
+  position: relative;
   cursor: pointer;
   border-bottom-color: #fff;
-  border-bottom-width: 6px; }
+  border-bottom-width: 6px;
+  margin-bottom: 0; }
   .tab-trainers .table-view .table-view-cell .item-image {
     height: 250px; }
   .tab-trainers .table-view .table-view-cell .curtain {
@@ -1836,66 +1863,67 @@ a.landing-button, button.landing-button {
         font-size: 1.2em;
         line-height: 20px; }
 
+.trainer-content .trainer-info img {
+  width: 100%;
+  height: auto; }
+.trainer-content .trainer-info .info {
+  display: block;
+  padding: 10px;
+  line-height: 25px; }
+.trainer-content .trainer-info .pink-button {
+  width: 95%; }
+.trainer-content .videos {
+  background: #D4D4D4;
+  padding-top: 15px;
+  margin-top: 20px; }
+  .trainer-content .videos h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    letter-spacing: 2px;
+    margin: 0 0 15px;
+    font-weight: 500; }
+
 .bar-nav {
-  text-transform: uppercase;
-  letter-spacing: 3px; }
+  text-transform: uppercase; }
   .bar-nav a {
     color: black; }
 
 .connect-content {
-  background: #E7E7E7; }
-  .connect-content.white {
-    background: #ffffff; }
-  .connect-content .settings-connect {
-    margin-top: 44px; }
-    .connect-content .settings-connect .card {
-      margin: 0;
-      padding: 0;
-      background: transparent;
-      box-shadow: none; }
-      .connect-content .settings-connect .card .item {
-        border: 0; }
-        .connect-content .settings-connect .card .item.status {
-          text-align: center;
-          font-size: 1.4em;
-          font-weight: 600; }
-          .connect-content .settings-connect .card .item.status.ok {
-            color: #009B00; }
-        .connect-content .settings-connect .card .item.item-image {
-          display: block;
-          margin: 0 auto;
-          width: 75%;
-          background: transparent;
-          box-shadow: none;
-          border-radius: 0;
-          border: 0; }
-        .connect-content .settings-connect .card .item.item-footer {
-          font-size: 1.3em;
-          font-weight: 400; }
-      .connect-content .settings-connect .card.white {
-        background: #ffffff; }
-    .connect-content .settings-connect .description {
-      margin: 5px;
-      font-weight: 400;
-      font-size: 1.2em;
-      line-height: 25px;
-      text-align: center; }
-    .connect-content .settings-connect .connect-form {
-      margin: 0 15px; }
-    .connect-content .settings-connect .connect-jawbone-form {
-      background: #DFDFDF;
-      padding: 10px; }
-      .connect-content .settings-connect .connect-jawbone-form .list .item {
-        padding: 15px;
-        font-size: 1.3em;
-        font-weight: 400; }
-        .connect-content .settings-connect .connect-jawbone-form .list .item:first-child {
-          border-top-left-radius: 5px;
-          border-top-right-radius: 5px;
-          border-bottom-width: 2px; }
-        .connect-content .settings-connect .connect-jawbone-form .list .item:last-child {
-          border-bottom-left-radius: 5px;
-          border-bottom-right-radius: 5px; }
+  background: #E7E7E7;
+  padding: 10px; }
+  .connect-content.jawbone {
+    background: white; }
+  .connect-content .connect-logo {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    height: 150px;
+    background: url('../img/connect-account.png') no-repeat center center;
+    background-size: contain; }
+  .connect-content .connect-jawbone {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    height: 150px;
+    background: url('../img/connect-jawbone.png') no-repeat center center;
+    background-size: contain; }
+  .connect-content .description {
+    text-align: center;
+    color: #000000; }
+  .connect-content .status {
+    font-size: 1.1em;
+    text-align: center;
+    font-weight: 500; }
+    .connect-content .status.ok {
+      color: #03AF01;
+      text-transform: capitalize; }
+  .connect-content .connect-form {
+    margin-bottom: 10px; }
+    .connect-content .connect-form .round-input:first-child {
+      margin-top: 15px; }
+    .connect-content .connect-form .landing-button {
+      margin-top: 20px; }
 
 .landing-content {
   display: flex;
@@ -1956,6 +1984,9 @@ a.landing-button, button.landing-button {
     background: url('../img/logo_color.png') center no-repeat;
     background-size: contain; }
 
+.settings .bar {
+  border-width: 0 !important; }
+
 .settings-content {
   background: #F0EFF5; }
   .settings-content .table-view .table-view-cell a {
@@ -1978,3 +2009,112 @@ a.landing-button, button.landing-button {
     .settings-content .sub-settings .button {
       font-size: 1.5em;
       color: #636364; }
+
+.follow-content .social {
+  display: table;
+  text-align: center;
+  background: #ffffff;
+  height: 100%;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0; }
+  .follow-content .social li {
+    display: block;
+    margin: 30px 0;
+    text-align: left;
+    line-height: 20px;
+    height: 60px;
+    background: #ffffff; }
+    .follow-content .social li img {
+      height: 100%;
+      width: auto; }
+    .follow-content .social li .description {
+      display: inline-block;
+      height: 60px;
+      margin: 0 0 0 20px;
+      padding: 0;
+      vertical-align: middle;
+      line-height: 10px;
+      text-align: center;
+      color: #000000;
+      font-weight: 400;
+      font-size: 1.1em; }
+
+.text-content {
+  padding: 20px; }
+  .text-content .cosmo-logo {
+    margin: 40px auto 30px;
+    display: block;
+    background: red;
+    width: 60%;
+    height: 50px;
+    background: url('../img/logo_color.png') no-repeat center center;
+    background-size: contain; }
+  .text-content.padded {
+    margin-top: 30px; }
+  .text-content p {
+    font-size: 1em;
+    color: #000000;
+    margin-bottom: 20px; }
+    .text-content p.center {
+      text-align: center; }
+    .text-content p.bold {
+      font-weight: 600;
+      letter-spacing: 0; }
+
+.feedback {
+  display: block;
+  height: 100%;
+  width: 100%;
+  letter-spacing: 0; }
+  .feedback .icon {
+    font-size: 1em;
+    line-height: 22px;
+    vertical-align: middle;
+    color: #0061FF;
+    letter-spacing: 0; }
+    .feedback .icon.bold {
+      font-weight: 800; }
+  .feedback .bar-nav {
+    text-transform: none;
+    letter-spacing: 0;
+    background: #F7F7F7; }
+  .feedback .feedback-content {
+    height: 95%; }
+    .feedback .feedback-content .table-view {
+      display: block;
+      height: 100%;
+      margin: 0 !important;
+      border: 0;
+      padding: 0; }
+      .feedback .feedback-content .table-view .table-view-cell {
+        display: block;
+        height: auto; }
+        .feedback .feedback-content .table-view .table-view-cell.message {
+          height: calc(100% - 85px);
+          padding: 0;
+          margin: 0;
+          display: block; }
+          @media screen and (max-height: 400px) {
+            .feedback .feedback-content .table-view .table-view-cell.message {
+              height: 200px;
+              padding-bottom: 20px;
+              background: yellow; } }
+          .feedback .feedback-content .table-view .table-view-cell.message textarea {
+            display: block;
+            width: 100%;
+            height: 100%;
+            padding: 15px;
+            text-align: left;
+            border: 0; }
+        .feedback .feedback-content .table-view .table-view-cell span {
+          display: inline;
+          font-weight: 300;
+          margin: 0;
+          padding: 0; }
+        .feedback .feedback-content .table-view .table-view-cell .sub {
+          color: #C6C6C6; }
+        .feedback .feedback-content .table-view .table-view-cell .mail {
+          color: #0061FF; }
+        .feedback .feedback-content .table-view .table-view-cell .subject {
+          color: #000000; }

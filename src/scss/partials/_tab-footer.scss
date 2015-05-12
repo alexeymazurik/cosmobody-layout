@@ -16,6 +16,11 @@
       background: #464646;
       color: #ffffff;
     }
+
+    &:active {
+      background: darken(#464646, 10);
+      color: darken(#ffffff, 20);
+    }
   }
   
   .tab-label {
