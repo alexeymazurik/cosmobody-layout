@@ -1415,6 +1415,11 @@ html {
     overflow-x: hidden;
     overflow-y: auto; }
 
+.content > * {
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0); }
+
 a.landing-button, button.landing-button {
   margin: 0;
   text-transform: uppercase;
