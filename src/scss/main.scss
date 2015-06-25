@@ -1,10 +1,12 @@
 // Include all of Ratchet
 @import "lib/ratchet/ratchet";
 
+// Base
 @import "base/normalize";
 @import "base/retina";
 @import "base/base";
 
+// Components
 @import "components/buttons";
 @import "components/inputs";
 @import "components/tabs";
@@ -12,13 +14,15 @@
 @import "components/links";
 @import "components/retina-icons";
 
-@import "partials/tabs";
-@import "partials/tab-footer";
-@import "partials/tab-workouts";
-@import "partials/tab-programs";
-@import "partials/tab-trainers";
-@import "partials/header";
+//Tabs
+@import "partials/tabs/tabs";
+@import "partials/tabs/tab-footer";
+@import "partials/tabs/tab-workouts";
+@import "partials/tabs/tab-programs";
+@import "partials/tabs/tab-trainers";
 
+// Other stuff
+@import "partials/header";
 @import "partials/connect";
 @import "partials/landing";
 @import "partials/member-login";
@@ -26,23 +30,3 @@
 @import "partials/follow";
 @import "partials/settings-text";
 @import "partials/feedback";
-
-// @import "partials/header";
-
-// @import "partials/landing";
-// @import "partials/popup";
-// @import "partials/member-login";
-
-// @import "partials/tabs";
-
-// @import "partials/tab-videos";
-
-// @import "partials/tab-workouts";
-// @import "partials/tab-programs";
-
-// @import "partials/tab-trainers";
-// @import "partials/tab-trainer";
-
-
-// @import "partials/settings";
-// @import "partials/connect";
