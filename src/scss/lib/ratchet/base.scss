@@ -9,6 +9,10 @@
           box-sizing: border-box;
 }
 
+.content > * {
+  @include transform(translateZ(1));
+}
+
 // We fix position the body and scroll `.content`.
 body {
   position: fixed;
@@ -48,9 +52,9 @@ a {
 
 // Hack to force all relatively and absolutely positioned elements still render while scrolling
 // Note: This is a bug for "-webkit-overflow-scrolling: touch"
-.content > * {
-  @include transform(translateZ(0));
-}
+// .content > * {
+//   @include transform(translateZ(0));
+// }
 
 // Pad top/bottom of content so it doesn't hide behind bars.
 // Note: For these to work, content must come after both bars in the markup

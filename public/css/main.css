@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,500,300);
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -148,6 +149,11 @@ td, th {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+.content > * {
+  -webkit-transform: translateZ(1);
+  -ms-transform: translateZ(1);
+  transform: translateZ(1); }
+
 body {
   position: fixed;
   top: 0;
@@ -176,11 +182,6 @@ a {
   overflow: auto;
   background-color: #fff;
   -webkit-overflow-scrolling: touch; }
-
-.content > * {
-  -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0); }
 
 .bar-nav ~ .content {
   padding-top: 44px; }
@@ -1406,19 +1407,12 @@ td, th {
 html {
   width: 100%;
   height: 100%;
-  font-family: Helvetica Neue, Arial, open-sans; }
+  font-family: Helvetica Neue, Roboto, Arial, open-sans; }
   html body {
     width: 100%;
     height: 100%;
     margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    overflow-y: auto; }
-
-.content > * {
-  -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0); }
+    padding: 0; }
 
 a.landing-button, button.landing-button {
   margin: 0;
@@ -1477,8 +1471,10 @@ a.landing-button, button.landing-button {
   padding: 0;
   background: red; }
   .tabs .tab {
+    display: inline-block;
     width: 20%;
     padding: 5px;
+    margin: 0;
     background: #ff0000;
     box-sizing: border-box;
     text-align: center;
@@ -1619,54 +1615,56 @@ a.landing-button, button.landing-button {
   .active .icon-history {
     background-image: url('../img/icons@2x/active/icon-clock.png'); } }
 
-.tab-videos .table-view {
-  margin: 0 !important;
-  border: 0; }
-  .tab-videos .table-view.higher .time-duration {
-    top: calc(100% - 90px) !important; }
-  .tab-videos .table-view.higher .media-body {
-    height: 70px !important; }
-  .tab-videos .table-view .table-view-cell {
-    position: relative;
-    margin: 0;
-    padding: 0;
-    border-bottom: 10px solid #D4D4D4; }
-    .tab-videos .table-view .table-view-cell img {
-      display: block;
-      width: 100%;
-      height: auto; }
-    .tab-videos .table-view .table-view-cell .time-duration {
-      position: absolute;
-      display: inline-block;
-      width: 50px;
-      height: 20px;
-      top: calc(100% - 80px);
-      left: calc(100% - 50px);
-      font-size: 0.9em;
-      font-weight: 500;
-      color: #ffffff;
-      text-align: center;
-      border: 0;
-      background: #FC0196; }
-    .tab-videos .table-view .table-view-cell .media-body {
-      display: block;
-      width: 100%;
-      height: 60px;
+.tab-videos {
+  overflow-y: scroll; }
+  .tab-videos .table-view {
+    margin: 0 !important;
+    border: 0; }
+    .tab-videos .table-view.higher .time-duration {
+      top: calc(100% - 90px) !important; }
+    .tab-videos .table-view.higher .media-body {
+      height: 70px !important; }
+    .tab-videos .table-view .table-view-cell {
+      position: relative;
       margin: 0;
-      padding: 10px; }
-      .tab-videos .table-view .table-view-cell .media-body .main-title {
+      padding: 0;
+      border-bottom: 10px solid #D4D4D4; }
+      .tab-videos .table-view .table-view-cell img {
         display: block;
         width: 100%;
-        font-size: 1.2em; }
-      .tab-videos .table-view .table-view-cell .media-body .sub-title {
+        height: auto; }
+      .tab-videos .table-view .table-view-cell .time-duration {
+        position: absolute;
+        display: inline-block;
+        width: 50px;
+        height: 20px;
+        top: calc(100% - 80px);
+        left: calc(100% - 50px);
         font-size: 0.9em;
-        font-weight: 500; }
-      .tab-videos .table-view .table-view-cell .media-body .up-title {
-        font-weight: 600;
-        font-size: 0.9em;
-        text-transform: uppercase;
+        font-weight: 500;
+        color: #ffffff;
+        text-align: center;
+        border: 0;
+        background: #FC0196; }
+      .tab-videos .table-view .table-view-cell .media-body {
         display: block;
-        margin-bottom: 5px; }
+        width: 100%;
+        height: 60px;
+        margin: 0;
+        padding: 10px; }
+        .tab-videos .table-view .table-view-cell .media-body .main-title {
+          display: block;
+          width: 100%;
+          font-size: 1.2em; }
+        .tab-videos .table-view .table-view-cell .media-body .sub-title {
+          font-size: 0.9em;
+          font-weight: 500; }
+        .tab-videos .table-view .table-view-cell .media-body .up-title {
+          font-weight: 600;
+          font-size: 0.9em;
+          text-transform: uppercase;
+          display: block;
+          margin-bottom: 5px; }
 
 .bar-tab {
   margin: 0;

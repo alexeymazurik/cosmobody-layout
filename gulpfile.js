@@ -11,14 +11,23 @@ var rename = require('gulp-rename');
 var paths = {
   fonts: ['./bower_components/ratchet/dist/fonts/*.*'],
   sass: ['./src/scss/**/*.scss'],
-  scripts: ['./bower_components/ratchet/dist/js/ratchet.min.js']
+  scripts: [
+  './bower_components/ratchet/dist/js/ratchet.min.js',
+  './bower_components/appscroll/appscroll.min.js',
+  './bower_components/jquery/dist/jquery.min.js'
+  ]
 };
 
 gulp.task('serve', function() {
   connect.server({
-    livereload: true,
+    livereload: false,
     root: 'public'
   });
+});
+
+gulp.task('ratchet', function(){
+  return gulp.src(['./bower_components/ratchet/dist/css/ratchet.css'])
+  .pipe(gulp.dest('./public/css/'));
 });
 
 gulp.task('fonts', function(){

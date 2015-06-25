@@ -5,9 +5,11 @@
   background: red;
   
   .tab {
+    display: inline-block;
     width: 20%;
 
     padding: 5px;
+    margin: 0;
 
     background: #ff0000;
 
