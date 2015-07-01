@@ -27,21 +27,21 @@ only screen and (                min-resolution: 2dppx) {
   &.icon-search {
     width: 22px;
     height: 21px;
-    
+
     background: url('../img/icons@2x/icon-search.png') 50% center center;
   }
 
   &.icon-menu {
     width: 21px;
     height: 34px;
-    
+
     background: url('../img/icons@2x/icon-menu.png') 50% center center;
   }
 
   &.icon-dash {
     width: 26px;
     height: 26px;
-    
+
     background-image: url('../img/icons@2x/icon-home.png');
     background-size: contain;
   }

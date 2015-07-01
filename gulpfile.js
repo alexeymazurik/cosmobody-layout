@@ -10,7 +10,10 @@ var rename = require('gulp-rename');
 
 var paths = {
   fonts: ['./bower_components/ratchet/dist/fonts/*.*'],
-  sass: ['./src/scss/**/*.scss'],
+  sass: [
+    './src/scss/**/*.scss',
+    './src/scss/**/**/*.scss'
+  ],
   scripts: ['./bower_components/ratchet/dist/js/ratchet.min.js']
 };
 
